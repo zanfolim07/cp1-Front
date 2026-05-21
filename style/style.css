@@ -241,3 +241,20 @@ header {
   display: block;
   border-radius: var(--raio-grande);
 }
+
+.header-pagina {
+  max-width: var(--max-largura);
+  margin: 0 auto;
+  padding: 4rem var(--espacamento) 3rem;
+  text-align: center;
+}
+ 
+.header-pagina h1 {
+  margin-bottom: 0.75rem;
+}
+ 
+.header-pagina p {
+  font-size: 1rem;
+  max-width: 540px;
+  margin: 0 auto;
+}
