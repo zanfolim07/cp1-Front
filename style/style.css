@@ -497,3 +497,54 @@ form {
  flex: 1;
  margin-bottom: 1rem;
 }
+
+label {
+ font-size: 0.82rem;
+ font-weight: 600;
+ color: var(--cor-texto);
+ margin-bottom: 0.4rem;
+ letter-spacing: 0.02em;
+}
+
+input,
+select,
+textarea {
+ font-family: var(--fonte-corpo);
+ font-size: 0.9rem;
+ color: var(--cor-texto);
+ background-color: var(--cor-fundo);
+ border: 1.5px solid var(--cor-borda);
+ border-radius: var(--raio);
+ padding: 0.65rem 0.9rem;
+ width: 100%;
+ transition: border-color var(--transicao), box-shadow var(--transicao);
+ outline: none;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+ border-color: #b0c8bb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+ border-color: var(--cor-primaria);
+ box-shadow: 0 0 0 3px rgba(26, 99, 196, 0.12);
+ background-color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+ color: var(--cor-texto-claro);
+}
+
+textarea {
+ resize: vertical;
+ min-height: 90px;
+}
+
+.form-submit {
+ margin-top: 0.5rem;
+}
