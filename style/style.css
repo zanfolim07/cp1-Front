@@ -41,3 +41,27 @@ body {
   background-color: var(--cor-fundo);
   min-height: 100vh;
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.2;
+}
+ 
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h3 { font-size: 1.2rem; }
+ 
+p {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+}
+ 
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color var(--transicao);
+}
+ 
+a:hover {
+  color: var(--cor-primaria-escura);
+}
