@@ -440,3 +440,291 @@ section {
   flex: 1;
   min-width: 260px;
 }
+
+.contato-info h2 {
+ margin-bottom: 1rem;
+}
+
+.contato-info p {
+ margin-bottom: 1.5rem;
+}
+
+.contato-detalhe {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+ margin-bottom: 1rem;
+ font-size: 0.9rem;
+ color: var(--cor-texto-suave);
+}
+
+.contato-icone {
+ width: 36px;
+ height: 36px;
+ background-color: var(--cor-primaria-clara);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1rem;
+ flex-shrink: 0;
+}
+
+.contato-form-wrap {
+ flex: 1.5;
+ min-width: 300px;
+ background-color: var(--cor-fundo-card);
+ border: 1px solid var(--cor-borda);
+ border-radius: var(--raio-grande);
+ padding: 2rem;
+ box-shadow: var(--sombra);
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+}
+
+.form-linha {
+ display: flex;
+ gap: 1rem;
+}
+
+.form-grupo {
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+ margin-bottom: 1rem;
+}
+
+label {
+ font-size: 0.82rem;
+ font-weight: 600;
+ color: var(--cor-texto);
+ margin-bottom: 0.4rem;
+ letter-spacing: 0.02em;
+}
+
+input,
+select,
+textarea {
+ font-family: var(--fonte-corpo);
+ font-size: 0.9rem;
+ color: var(--cor-texto);
+ background-color: var(--cor-fundo);
+ border: 1.5px solid var(--cor-borda);
+ border-radius: var(--raio);
+ padding: 0.65rem 0.9rem;
+ width: 100%;
+ transition: border-color var(--transicao), box-shadow var(--transicao);
+ outline: none;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+ border-color: #b0c8bb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+ border-color: var(--cor-primaria);
+ box-shadow: 0 0 0 3px rgba(26, 99, 196, 0.12);
+ background-color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+ color: var(--cor-texto-claro);
+}
+
+textarea {
+ resize: vertical;
+ min-height: 90px;
+}
+
+.form-submit {
+ margin-top: 0.5rem;
+}
+
+footer {
+ background-color: transparent;
+ color: var(--cor-texto);
+ padding: 2rem var(--espacamento) 1rem;
+ margin-top: 5rem;
+}
+
+.footer-inner {
+ max-width: var(--max-largura);
+ margin: 0 auto;
+ padding: 0;
+}
+
+.footer-topo {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+}
+
+.footer-logo {
+ font-family: var(--fonte-titulo);
+ font-size: 1.25rem;
+ font-weight: 700;
+ color: var(--cor-texto);
+}
+
+.footer-logo span {
+ color: var(--cor-primaria);
+}
+
+.footer-nav {
+ justify-self: center;
+}
+
+.footer-nav ul {
+ list-style: none;
+ display: flex;
+ gap: 1.5rem;
+ padding: 0;
+ margin: 0;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.footer-nav ul li a {
+ font-size: 0.95rem;
+ color: var(--cor-texto);
+ text-decoration: none;
+ transition: color var(--transicao);
+}
+
+.footer-nav ul li a:hover {
+ color: var(--cor-primaria);
+}
+
+.footer-base {
+ margin-top: 1rem;
+ text-align: center;
+ font-size: 0.9rem;
+ color: var(--cor-texto-claro);
+}
+
+.texto-centro { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+
+@media (max-width: 900px) {
+
+  .hero {
+ flex-direction: column;
+ text-align: center;
+ padding: 3rem var(--espacamento);
+ min-height: auto;
+ gap: 2.5rem;
+ }
+ .grade-cards-pacotes .card {
+ flex: 1 1 calc((100% - 1.5rem) / 2);
+ max-width: calc((100% - 1.5rem) / 2);
+ }
+
+ .hero-texto {
+ max-width: 100%;
+ }
+
+ .hero-texto p {
+ max-width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+ .hero-acoes {
+ justify-content: center;
+ }
+
+ .hero-imagem {
+ max-width: 100%;
+ width: 100%;
+ }
+
+ .hero-imagem img {
+ height: 300px;
+ }
+
+ .contato-grid {
+ flex-direction: column;
+ }
+
+ .footer-topo {
+ flex-direction: column;
+ }
+}
+
+@media (max-width: 700px) {
+ :root {
+ --espacamento: 1.2rem;
+ }
+
+ .grade-cards {
+ flex-direction: column;
+ align-items: center;
+ }
+
+ .grade-cards-pacotes .card {
+ max-width: 100%;
+ }
+
+ .card {
+ max-width: 100%;
+ }
+
+ .card-pacote {
+ max-width: 100%;
+ }
+
+ .barra-confianca {
+ gap: 1.5rem;
+ padding: 2rem 1.2rem;
+ }
+
+ .form-linha {
+ flex-direction: column;
+ gap: 0;
+ }
+
+ .footer-base {
+ flex-direction: column;
+ text-align: center;
+ }
+
+ nav ul {
+ gap: 1.2rem;
+ }
+
+ nav ul li a {
+ font-size: 0.82rem;
+ }
+
+ .header-pagina {
+ padding: 2.5rem var(--espacamento) 2rem;
+ }
+
+ .contato-form-wrap {
+ padding: 1.5rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .nav-inner {
+ height: 58px;
+ }
+
+ nav ul {
+ gap: 0.8rem;
+ }
+
+ .stat strong {
+ font-size: 1.8rem;
+ }
+}
