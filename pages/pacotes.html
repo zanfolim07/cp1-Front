@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pacotes de viagem TripWay: Aventura, Cultura e Gastronomia, Pacote Completo." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Pacotes | TripWay</title>
-</head>
-<body>
+  </head>
+  <body>
+
     <nav>
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Trip<span>Way</span></a>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="pacotes.html">Pacotes</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="pacotes.html" class="ativo">Pacotes</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
+      </div>
     </nav>
 
     <header>
-      <h1>Nossos Pacotes</h1>
-      <p>Escolha o pacote ideal e viaje sem complicações. Cuidamos de tudo para você aproveitar cada momento.</p>
+      <div class="header-pagina">
+        <h1>Nossos Pacotes</h1>
+        <p>Cuidamos de tudo para você aproveitar cada momento. Escolha o pacote que combina com o seu estilo.</p>
+      </div>
     </header>
 
     <main>
 
-        <section class="pacotes-container">
-            <article class="pacote">
-                <img src="../img/imagem-card-aventura.png" alt="imagem off road">
-                <div>
-                    <h2>Pacote aventura</h2>
-                    <p> Trilhas, camping e destinos off-road.</p>
-                </div>
-            </article>
+      <section>
+        <div class="grade-cards grade-cards-pacotes">
 
-            <article class="pacote">
-                <img src="../img/imagem-card-culinaria.png" alt="imagem culinaria">
-                <div>
-                    <h2>Pacote Cultura e Gastronomia</h2>
-                    <p>Historias, museus e culinaria local.</p>
-                </div>
-            </article>
+          <article class="card card-pacote">
+            <img src="../img/imagem-card-aventura.png" alt="Pessoa em trilha off-road em uma paisagem natural exuberante" />
+            <div class="card-corpo">
+              <h3>Pacote Aventura</h3>
+              <p>Trilhas, camping e destinos off-road para quem quer sair da zona de conforto. Natureza, adrenalina e experiências inesquecíveis.</p>
+            </div>
+            <div class="card-rodape">
+              <a href="contato.html" class="btn btn-primario">Solicitar orçamento</a>
+            </div>
+          </article>
 
-            <article class="pacote">
-                <img src="../img/imagem-pacote-completo.png" alt="imagem familia junta">
-                <div>
-                    <h2>Pacote completo</h2>
-                    <p>Trilhas, culinaria local, historias, camping etc...</p>
-                </div>
-            </article>
+          <article class="card card-pacote">
+            <img src="../img/imagem-card-culinaria.png" alt="Mesa com pratos típicos da culinária local de um destino turístico" />
+            <div class="card-corpo">
+              <h3>Cultura e Gastronomia</h3>
+              <p>Histórias, museus, mercados locais e culinária autêntica. Para quem quer mergulhar fundo na cultura de cada lugar.</p>
+            </div>
+            <div class="card-rodape">
+              <a href="contato.html" class="btn btn-primario">Solicitar orçamento</a>
+            </div>
+          </article>
 
-        </section>
+          <article class="card card-pacote">
+            <img src="../img/imagem-pacote-completo.png" alt="Família reunida e sorrindo durante uma viagem inesquecível" />
+            <div class="card-corpo">
+              <h3>Pacote Completo</h3>
+              <p>O melhor dos dois mundos: trilhas, culinária local, história e camping. A experiência definitiva sem nenhum limite.</p>
+            </div>
+            <div class="card-rodape">
+              <a href="contato.html" class="btn btn-primario">Solicitar orçamento</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
     </main>
 
     <footer>
-
-        <p>TripWay &copy; 2026 — Todos os direitos reservados</p>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="pacotes.html">Pacotes</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="destinos.html">Destinos</a></li>
-        </ul>
-
+      <div class="footer-inner">
+        <div class="footer-topo">
+          <div class="footer-logo">Trip<span>Way</span></div>
+          <p class="footer-copy">TripWay &copy; 2026 — Todos os direitos reservados</p>
+        </div>
+      </div>
     </footer>
 
-</body>
+  </body>
 </html>
