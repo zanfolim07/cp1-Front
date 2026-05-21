@@ -715,3 +715,16 @@ footer {
  }
 }
 
+@media (max-width: 480px) {
+ .nav-inner {
+ height: 58px;
+ }
+
+ nav ul {
+ gap: 0.8rem;
+ }
+
+ .stat strong {
+ font-size: 1.8rem;
+ }
+}
