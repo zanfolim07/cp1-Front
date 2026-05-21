@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-primaria: #1a63c4;
+  --cor-primaria-escura: #0f3a8f;
+  --cor-primaria-clara: #e8f3ff;
+  --cor-destaque-clara: #fff8e6;
+  --cor-texto: #1a1a1a;
+  --cor-texto-suave: #555555;
+  --cor-texto-claro: #888888;
+  --cor-fundo: #ffffff;
+  --cor-fundo-card: #ffffff;
+  --cor-borda: #e2e8e4;
+  --cor-borda-suave: #f0f0ec;
+
+  --fonte-titulo: 'Poppins', 'Playfair Display', Georgia, serif;
+  --fonte-corpo: 'Poppins', 'DM Sans', 'Segoe UI', sans-serif;
+
+  --raio: 12px;
+  --raio-grande: 20px;
+  --raio-pill: 100px;
+
+  --sombra: 0 2px 12px rgba(0, 0, 0, 0.07);
+  --sombra-hover: 0 8px 28px rgba(0, 0, 0, 0.13);
+
+  --transicao: 0.25s ease;
+
+  --max-largura: 1100px;
+  --espacamento: 2rem;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  min-height: 100vh;
+}
